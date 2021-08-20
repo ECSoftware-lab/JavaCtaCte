@@ -18,7 +18,7 @@ hora time NOT NULL
 OBS varchar(245) NULL
 Baja varchar(2) NOT NULL
 Fecha Moddate NULL
-Resp Modint(10) unsigned NOT NULL
+RespMod int(10) unsigned NOT NULL
 CodPostal varchar(15) NOT NULL
 LugarAlta varchar(45) NULLen que sucursal se le dio de alta
 Piso varchar(3) NULL
@@ -49,7 +49,7 @@ public class CProveedores {
     String OBS;
     String Baja;
     String Fecha;
-    String Resp;
+    int RespMod;
     String CodPostal;
     String LugarAlta;
     String Piso;
@@ -100,9 +100,12 @@ public class CProveedores {
         return Fecha;
     }
 
-    public String getResp() {
-        return Resp;
+    public int getRespMod() {
+        return RespMod;
     }
+    
+
+
 
     public String getLugarAlta() {
         return LugarAlta;

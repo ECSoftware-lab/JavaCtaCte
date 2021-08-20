@@ -65,7 +65,7 @@ public class LPagos {
                 registros [6]=rs.getString("NTransaccion");
                 registros [7]=rs.getString("Descripcion");
                 totalregistros=totalregistros+1;
-                JOptionPane.showConfirmDialog(null,Integer.toString(totalregistros));
+                //JOptionPane.showConfirmDialog(null,Integer.toString(totalregistros));
                 modelo.addRow(registros);
         
             }
